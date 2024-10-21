@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Parte principal */
+.partePrincipal {
+    float: right;
+    position: relative;
+    top: 100px;
+    right: 50px;
+    width: 70%;
+    margin: 0 0 0 50px;
+}
+
+
+/* Contorno box */
+.box {
+    padding: 30px;
+    margin: 50px auto 50px;
+    border-radius: 10px;
+    box-shadow: rgb(195, 215, 255) 3px 3px 10px 2px;
+}
+
+.box strong {
+    color: #0073ff;
+}
+
+/* Título */
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    background: linear-gradient(135deg, #bddfff 0%, rgb(116, 174, 255)  80%, #1b81ff 100%);
+    box-shadow: #f0f0f0 3px 3px 10px 2px;
+    color: white;
+    height: 100px;
+}
+
+/* Conteúdo box */
+.box h2 {
+    color: #0073ff;
+    margin: 20px 30px 20px;
+}
+
+p {
+    font-size: 14px;
+    margin: 20px 35px 20px;
+    text-align: justify;
+}
+
+.box a {
+    text-decoration: none;
+    color: #0073ff;
+    font-weight: bold;
+}
+
+/* Tópicos */
+ul {
+    font-size: 20px;
+    margin: 20px 70px 20px;
+    text-align: justify;
+}
+
+ol {
+    margin: 20px 70px 20px;
+    text-align: justify;
+}
+
+li {
+    font-size: 14px;
+    margin: 20px auto 20px;
+}
+
+/* Indice */
+aside {
+    position: fixed;
+    width: 25%;
+}
+
+.indice {
+    display: flex;
+    justify-items: center;
+    margin: 50px 10px 50px;
+}
+
+.indice h3 {
+    color: #0073ff;
+    margin: 50px auto 20px;
+}
+
+.indice li {
+    font-size: 14px;
+    width: fit-content;
+    margin: 15px 15px 15px;
+}
+
+.indice a {
+    color: black;
+    text-decoration: none;
+}
