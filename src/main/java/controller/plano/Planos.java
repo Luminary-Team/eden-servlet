@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "Planos", value = "/HTMLS/areaRestrita/plan")
+@WebServlet(name = "Planos", value = "/html/areaRestrita/plan")
 public class Planos extends HttpServlet {
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     PlanosDAO dao = new PlanosDAO();
@@ -35,14 +35,14 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
     } catch (SQLException sqe) {
         sqe.printStackTrace();
         request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-        request.getRequestDispatcher("/HTMLS/areaRestrita/erro.jsp").forward(request, response);
+        request.getRequestDispatcher("/html/areaRestrita/erro.jsp").forward(request, response);
     }
 
     // Define o atributo para a lista de administradores
     request.setAttribute("planList", planList);
 
     // Encaminha para a página JSP de listagem de administradores
-    request.getRequestDispatcher("/HTMLS/areaRestrita/edenAreaRestritaPrimeiros_plano.jsp").forward(request, response);
+    request.getRequestDispatcher("/html/areaRestrita/edenAreaRestritaPrimeiros_plano.jsp").forward(request, response);
     }
 }
 

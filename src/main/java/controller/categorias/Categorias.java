@@ -16,7 +16,7 @@ import jakarta.servlet.annotation.WebServlet;
 import model.Admin;
 import model.Categ;
 
-@WebServlet(name = "Categorias", value = "/HTMLS/areaRestrita/categ")
+@WebServlet(name = "Categorias", value = "/html/areaRestrita/categ")
 public class Categorias extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,13 +34,13 @@ public class Categorias extends HttpServlet {
         } catch (SQLException sqe) {
             sqe.printStackTrace();
             request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-            request.getRequestDispatcher("/HTMLS/areaRestrita/erro.jsp").forward(request, response);
+            request.getRequestDispatcher("/html/areaRestrita/erro.jsp").forward(request, response);
         }
 
         // Define o atributo para a lista de administradores
         request.setAttribute("categList", categList);
 
         // Encaminha para a página JSP de listagem de administradores
-        request.getRequestDispatcher("/HTMLS/areaRestrita/edenAreaRestritaPrimeiros_categoria.jsp").forward(request, response);
+        request.getRequestDispatcher("/html/areaRestrita/edenAreaRestritaPrimeiros_categoria.jsp").forward(request, response);
     }
 }

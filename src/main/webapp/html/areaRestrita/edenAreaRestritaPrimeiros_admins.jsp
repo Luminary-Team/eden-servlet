@@ -96,7 +96,7 @@
                 <button id="edit" class="edit-btn"><img src="../../imagens/lapis-edicao.png" alt="Editar"></button>
                 <button id="rmv" class="remove-btn"><img src="../../imagens/lixeira-delete.png" alt="Remover"></button>
 
-            <%-- POP UP DE EDITAR  --%>
+            <%-- POP UP DE EDITAR --%>
             <div class="popup">
                 <form class="popdentro" method="post" action="/html/arqsJsp/areaRestrita/editarAdmin">
                     <input type="number" value="<%=id%>" name="id-admin" readonly>

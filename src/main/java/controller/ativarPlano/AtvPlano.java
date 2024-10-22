@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "AtvPlano", value = "/HTMLS/areaRestrita/atvPlan")
+@WebServlet(name = "AtvPlano", value = "/html/areaRestrita/atvPlan")
 public class AtvPlano extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         AtvPlanoDAO dao = new AtvPlanoDAO();
@@ -35,10 +35,10 @@ public class AtvPlano extends HttpServlet {
         }catch (SQLException sqe){
             sqe.printStackTrace();
             request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-            request.getRequestDispatcher("/HTMLS/areaRestrita/erro.jsp").forward(request, response);
+            request.getRequestDispatcher("/html/areaRestrita/erro.jsp").forward(request, response);
         }
 
         request.setAttribute("atvPlansList", atvPlansList);
-        request.getRequestDispatcher("/HTMLS/areaRestrita/edenAreaRestritaPrimeiros_ativarPlano.jsp").forward(request, response);
+        request.getRequestDispatcher("/html/areaRestrita/edenAreaRestritaPrimeiros_ativarPlano.jsp").forward(request, response);
     }
 }

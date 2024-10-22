@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "Artigos", value = "/HTMLS/areaRestrita/arts")
+@WebServlet(name = "Artigos", value = "/html/areaRestrita/arts")
 public class Artigos  extends HttpServlet {
 
     @Override
@@ -34,10 +34,10 @@ public class Artigos  extends HttpServlet {
         }catch (SQLException sqe){
             sqe.printStackTrace();
             request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-            request.getRequestDispatcher("/HTMLS/areaRestrita/erro.jsp").forward(request, response);
+            request.getRequestDispatcher("/html/areaRestrita/erro.jsp").forward(request, response);
         }
 
         request.setAttribute("artsList", artsList);
-        request.getRequestDispatcher("/HTMLS/areaRestrita/edenAreaRestritaPrimeiros_artigos.jsp").forward(request, response);
+        request.getRequestDispatcher("/html/areaRestrita/edenAreaRestritaPrimeiros_artigos.jsp").forward(request, response);
     }
 }
