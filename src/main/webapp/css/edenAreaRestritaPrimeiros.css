@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Principal */
+.partePrincipal {
+    float: right;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cadeado {
+    position: relative;
+    right: 4%;
+    top: 100px;
+    width: 15%;
+    z-index: 1;
+}
+
+.seguranca {
+    position: relative;
+    right: 4%;
+    border: #0080FF solid 2px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 50px 50px 30px;
+}
+
+.seguranca h1 {
+    color: #0080FF;
+    margin: 20px 0;
+}
+
+.seguranca p {
+    text-align: center;
+}
+
+#robo {
+    position: absolute;
+    z-index: -1;
+    right: 17%;
+    top: 25%;
+    rotate: 35deg;
+    width: 25%;
+}
