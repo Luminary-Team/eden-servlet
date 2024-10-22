@@ -1,18 +1,20 @@
 <h1 align="center">Servlet - Projeto</h1>
 
 <p align="center">
-  <strong>Disciplinas:</strong> Programação Orientada a Objetos (1º Ano) & Lógica de Programação (1º Ano)
+  Disciplinas: Programação Orientada a Objetos (1º Ano) & Lógica de Programação (1º Ano)
 </p>
 
 <p align="center">
-  <strong>Integrantes:</strong> Leonardo Lins
+  Integrantes: Leonardo Lins Furlanis
 </p>
 
 <hr>
 
 <h2>👨‍💻 Linguagens Utilizadas</h2>
 <ul>
-  <li>JAVA</li>
+  <li>Java</li>
+  <li>Html</li>
+  <li>Css</li>
 </ul>
 
 
@@ -20,7 +22,7 @@
 
 <h2>📂 Estrutura do Repositório</h2>
 <ul>
-  
+  <p>Servlet...</p>
 </ul>
 
 <h2>📚 Sobre o Projeto</h2>
@@ -32,5 +34,5 @@
 <hr>
 
 <p align="center">
-  <strong>Desenvolvido por Leonardo Lins</strong>
+  Desenvolvido por Leonardo Lins Furlanis
 </p>
