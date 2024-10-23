@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, white, #0088ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 680px;
+}
+
+
+/* Parte Principal */
+#cadeado {
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+    width: 200px;
+}
+
+.partePrincipal {
+    position: fixed;
+    background-color: white;
+    border-radius: 40px;
+    margin-top: 80px;
+    width: 450px;
+    height: 51%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.partePrincipal h1 {
+    text-align: center;
+    color: #0073ff;
+    margin-top: 40px;
+}
+
+.partePrincipal p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partePrincipal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partePrincipal input {
+    width: 350px;
+    border: 0;
+    border: #0088ff 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.partePrincipal #submit {
+    color: white;
+    background-color: #0080ff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 350px;
+}
+
+.partePrincipal a {
+    text-decoration: none;
+    color: #0073ff;
+}
+
+/* Pop-up */
+.pop-upLogin {
+    display: flex;
+    position: fixed;
+    top: 85%;
+    justify-content: center;
+    height: 85%;
+    width: 100%;
+    z-index: 1;
+}
+
+.conteudoPop-Up {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff3838;
+    box-shadow: 0 2px 8px rgb(111, 111, 111);
+    border-radius: 15px;
+    width: 22%;
+    height: 8%;
+    padding: 25px;
+    color: white;
+}
