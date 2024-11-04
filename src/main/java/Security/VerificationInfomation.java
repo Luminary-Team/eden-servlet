@@ -7,8 +7,6 @@ import java.util.regex.Pattern;
 
 public class VerificationInfomation {
     // Método para validar o Nome Completo
-    // Nome completo
-    // Nome completo
     public static boolean validarNome(String name) {
         return Pattern.matches("^[A-Za-zÀ-ÿ\\s]+$", name);
     }

@@ -1,6 +1,7 @@
 package dao;
 
 import Security.VerificationInfomation;
+import model.Plan;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -90,23 +91,45 @@ public class AdminDAO {
         }
     }
 
+//    Método utilizado para editar a senha
+    public ResultSet compararHash(int id){
+        conexao.conectar();
+        try{
+            conexao.pstmt = conexao.conn.prepareStatement("SELECT PASSWORD FROM ADMINISTRATOR WHERE ID_ADMINISTRATOR = ?");
+            conexao.pstmt.setInt(1, id);
+            return conexao.pstmt.executeQuery();
+        }catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     //    METODO PARA EDITAR O ADMINISTRADOR
     public boolean editarAdmin(int id, String nomeCompleto, String email, String senha) {
         conexao.conectar();
         VerificationInfomation vef = new VerificationInfomation();
+        String senhaBanco = null;
         try {
-            if (vef.validarEmail(email) && vef.validarSenha(senha) && vef.validarNome(nomeCompleto)) {
-                senha = vef.hashSenha(senha);
-                conexao.pstmt = conexao.conn.prepareStatement("update administrator set full_name = ?, email = ?, password = ? where id_administrator = ? ");
-                conexao.pstmt.setString(1, nomeCompleto);
-                conexao.pstmt.setString(2, email);
-                conexao.pstmt.setString(3, senha);
-                conexao.pstmt.setInt(4, id);
-
-                return conexao.pstmt.executeUpdate() > 0;
-            } else {
-                return false;
+            ResultSet rs = compararHash(id);
+//            MÉTODO PARA RACHAR SENHA
+            while (rs.next()) {
+                senhaBanco = rs.getString("PASSWORD");
             }
+//            CASO A SENHA RECEBIDA SEJA IGUAL A SENHA DO BANCO, ELE DEIXA A SENHA NORMAL, CASO CONTRÁRIO, ELE FAZ O REGEX E DEPOIS FAZ O HASH DA SENHA
+            if (senha.equals(senhaBanco)) {
+                senha = senhaBanco;
+            }else{
+                if (vef.validarSenha(senha)) {
+                    senha = vef.hashSenha(senha);
+                }
+            }
+            conexao.pstmt = conexao.conn.prepareStatement("update administrator set full_name = ?, email = ?, password = ? where id_administrator = ? ");
+            conexao.pstmt.setString(1, nomeCompleto);
+            conexao.pstmt.setString(2, email);
+            conexao.pstmt.setString(3, senha);
+            conexao.pstmt.setInt(4, id);
+
+            return conexao.pstmt.executeUpdate() > 0;
         } catch (SQLException sqe) {
             sqe.printStackTrace();
             return false;
