@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@WebServlet(name = "EditarAdmin", value = "/html/arqsJsp/areaRestrita/editarAdmin")
+@WebServlet(name = "EditarAdmin", value = "/jsp/arqsJsp/areaRestrita/editarAdmin")
 public class EditarAdmin extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -26,10 +26,10 @@ public class EditarAdmin extends HttpServlet{
         // chamo o método da classe AdminDao para editar esses dados no banco
         if (dao.editarAdmin(id, nomeCompleto, email, senha)){
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
     }
 }

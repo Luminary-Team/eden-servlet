@@ -81,7 +81,7 @@ HttpSession ses = request.getSession(false); // false significa que não criará
 
                 <%-- POP UP DE EDITAR --%>
                 <div class="popup">
-                    <form class="popdentro" method="post" action="/html/areaRestrita/editarCateg">
+                    <form class="popdentro" method="post" action="/jsp/areaRestrita/editarCateg">
                         <h2>Editar categoria</h2>
                         <h4>ID da categoria </h4>
                         <input type="number" value="<%=id%>" name="id_categ" readonly>
@@ -99,7 +99,7 @@ HttpSession ses = request.getSession(false); // false significa que não criará
 
                 <%-- POP UP DO DELETAR --%>
                 <div class="popupRmv">
-                    <form class="popdentroRmv" method="post" action="/html/areaRestrita/rmvCateg">
+                    <form class="popdentroRmv" method="post" action="/jsp/areaRestrita/rmvCateg">
                         <h3>Você tem certeza disso?</h3>
                         <div class="opcaoRmv">
                             <button type="submit" class="sim">Sim</button>
@@ -128,7 +128,7 @@ HttpSession ses = request.getSession(false); // false significa que não criará
         <button id="addAdmin" class="add-btn">Adicionar</button>
         <!-- adicionar administrador -->
         <div class="popup">
-            <form class="popdentro" action="/html/areaRestrita/addCateg" method="post">
+            <form class="popdentro" action="/jsp/areaRestrita/addCateg" method="post">
                 <h2>Adicione uma categotia </h2>
                 <br>
                 <h4>Nome da categoria </h4>
@@ -143,7 +143,7 @@ HttpSession ses = request.getSession(false); // false significa que não criará
             </form>
         </div>
         <div>
-            <button class="title-btn">Adicionar, remover ou excluir categoria</button>
+            <button class="title-btn">Gerenciar categorias</button>
         </div>
     </div>
 

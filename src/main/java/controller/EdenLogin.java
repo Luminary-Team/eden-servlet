@@ -27,12 +27,12 @@ public class EdenLogin extends HttpServlet{
             // Setar valor no atributo que vai mandar para o jsp
             session.setAttribute("nomeAdmin", nomeAdmin);
             // Enviar dados para o jsp
-            response.sendRedirect("/html/areaRestrita/edenAreaAdmins.jsp");
+            response.sendRedirect("/jsp/areaRestrita/edenAreaAdmins.jsp");
 
         }else{
             // Mensagem de erro para a variavel que receber
             session.setAttribute("erro", "Senha e/ou e-mail incorretos!");
-            response.sendRedirect("/html/index.jsp");
+            response.sendRedirect("../index.jsp");
         }
     }
 

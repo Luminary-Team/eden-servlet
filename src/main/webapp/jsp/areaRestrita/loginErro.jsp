@@ -14,13 +14,13 @@
 <body>
 <!-- Nav-Bar -->
 <header class="main-header">
-    <a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/imagens/logoEden.png" alt="" id="edenLogo"></a>
+    <a href="${pageContext.request.contextPath}/index.jsp"><img src="${pageContext.request.contextPath}/imagens/logoEden.png" alt="" id="edenLogo"></a>
 
     <nav>
         <ul>
-            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../../index.jsp">Início</a></li>
             <li><a href="../edenQuemSomos.html">Quem somos</a></li>
-            <li><a href="../../index.html#app">App</a></li>
+            <li><a href="../../index.jsplink do segundo ano">App</a></li>
         </ul>
     </nav>
 
@@ -31,7 +31,7 @@
 <div class="partePrincipal">
     <h1>Área Restrita</h1>
     <p>Área reservada para administradores do grupo Luminary</p>
-    <form action="./html/edenlogin" method="post">
+    <form action="./jsp/edenlogin" method="post">
         <input type="text" placeholder="User" name="user" required>
         <input type="password" placeholder="Senha" name="passwd" required>
         <input type="submit" value="Login" id="submit">

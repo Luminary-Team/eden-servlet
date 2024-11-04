@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "RemoverCategorias", value = "/html/areaRestrita/rmvCateg")
+@WebServlet(name = "RemoverCategorias", value = "/jsp/areaRestrita/rmvCateg")
 public class RemoverCategorias extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,10 +21,10 @@ public class RemoverCategorias extends HttpServlet {
         // CategoDAO para remover uma categoria
         if (dao.removeCategory(pk_id)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
     }
 }

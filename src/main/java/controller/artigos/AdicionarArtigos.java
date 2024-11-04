@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "AdicionarArtigos", value = "/html/areaRestrita/addArtigo")
+@WebServlet(name = "AdicionarArtigos", value = "/jsp/areaRestrita/addArtigo")
 public class AdicionarArtigos extends HttpServlet {
 
     @Override
@@ -24,10 +24,10 @@ public class AdicionarArtigos extends HttpServlet {
         // Chamando método da classe DAO para adicionar novos dados no banco
         if (dao.adicionarArtigo(headLine, news_url, source)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
 
 

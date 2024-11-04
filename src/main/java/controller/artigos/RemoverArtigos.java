@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "RemoverArtigos", value = "/html/areaRestrita/rmvArtigos")
+@WebServlet(name = "RemoverArtigos", value = "/jsp/areaRestrita/rmvArtigos")
 public class RemoverArtigos extends HttpServlet {
 
     @Override
@@ -22,10 +22,10 @@ public class RemoverArtigos extends HttpServlet {
         // ArtigosDAO para remover um artigo
         if (dao.removeArtigo(id_article)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
     }
 }

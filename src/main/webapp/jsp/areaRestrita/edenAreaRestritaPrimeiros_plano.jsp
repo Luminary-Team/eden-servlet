@@ -87,7 +87,7 @@
 
                 <%-- POP UP DE EDITAR --%>
                 <div class="popup">
-                    <form class="popdentro" method="post" action="/html/areaRestrita/editarPlano">
+                    <form class="popdentro" method="post" action="/jsp/areaRestrita/editarPlano">
                         <h2>Editar Plano</h2>
                         <h4>ID do plano </h4>
                         <input type="number" value="<%=id%>" name="id_plan" readonly>
@@ -109,7 +109,7 @@
 
                 <%-- POP UP DO DELETAR --%>
                 <div class="popupRmv">
-                    <form class="popdentroRmv" method="post" action="/html/areaRestrita/rmvPlano">
+                    <form class="popdentroRmv" method="post" action="/jsp/areaRestrita/rmvPlano">
                         <h3>Você tem certeza disso?</h3>
                         <div class="opcaoRmv">
                             <button type="submit" class="sim">Sim</button>
@@ -138,7 +138,7 @@
         <button id="addAdmin" class="add-btn">Adicionar</button>
         <!-- adicionar administrador -->
         <div class="popup">
-            <form class="popdentro" action="/html/areaRestrita/addPlano" method="post">
+            <form class="popdentro" action="/jsp/areaRestrita/addPlano" method="post">
                 <h2>Adicione um Plano </h2>
                 <br>
                 <h4>Nome do Plano</h4>
@@ -159,7 +159,7 @@
             </form>
         </div>
         <div>
-            <button class="title-btn">Adicionar, remover ou excluir plano</button>
+            <button class="title-btn">Gerenciar planos</button>
         </div>
     </div>
 
