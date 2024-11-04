@@ -10,7 +10,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-FROM tomcat:9.0.73-jdk11
+FROM tomcat:10.1.28-jdk17
 
 COPY --from=build /app/target/demoeden-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/main.war
 
