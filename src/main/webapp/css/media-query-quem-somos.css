@@ -1,0 +1,67 @@
+@media screen and (max-width: 1024px){
+    .parte1 img{
+        width: 400px;
+    }
+
+    .parte2 img{
+        width: 550px;
+        height: 308px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .parte1 img{
+        width: 270px;
+        margin-left: 10%;
+    }
+    .parte1 p{
+        font-size: 13px;
+    }
+
+    .parte2 img{
+        width: 300px;
+        height: 168px;
+    }
+    .textoParte2 h4{
+        font-size: 12px;
+    }
+    .textoParte2 ul li{
+        font-size: 11px;
+    }
+    .textoParte2 h2{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .primeiroSeparador{
+        margin-bottom: 30%;
+    }
+    .parte1 {
+        width: 100%;
+        margin: 50px;
+        flex-direction: column;
+    }
+    .parte1 p {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .parte1 img{
+        margin: 5%;
+        width: 80%;
+    }
+
+    .parte2{
+        margin-bottom: 0;
+    }
+    .textoParte2 {
+        width: 90%;
+        text-align: center;
+    }
+    .equipe1ano, .equipe2ano{
+        flex-direction: column;
+    }
+    .equipe2ano{
+        margin-bottom: 0;
+    }
+}

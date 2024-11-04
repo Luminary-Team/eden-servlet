@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .partePrincipal {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 90px;
+
+    }
+
+    .box {
+        padding: 15px;
+        margin: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        height: 70px;
+    }
+
+    .box h2 {
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    p, ul, ol, li {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="../../Js/scriptErro.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/edenLogin.css">
+    <link rel="stylesheet" href="../css/edenHeader.css">
+    <link rel="icon" href="../imagens/logoEden.png">
+</head>
+
+<body>
+
+    <!-- Nav-Bar -->
+    <header class="main-header">
+        <a href="../index.html"><img src="../imagens/logoEden.png" alt="" id="edenLogo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="edenQuemSomos.html">Quem somos</a></li>
+                <li><a href="../index.html#app">App</a></li>
+            </ul>
+        </nav>
+
+        <a href="edenLogin.jsp"><img src="../imagens/cadeado-navbar.png" alt="" id="cadeado_navbar"></a>
+    </header>
+
+    <img src="../imagens/cadeado-login.png" alt="" id="cadeado">
+    <div class="partePrincipal">
+        <h1>Área Restrita </h1>
+        <p>Área resevada para administradores do grupo Luminary</p>
+
+        <form action="edenlogin" method="post">
+            <input type="text" placeholder="User" name="user" required>
+            <input type="password" placeholder="Senha" name="passwd" required>
+            <input type="submit" value="Login" id="submit">
+        </form>
+    </div>
+
+    <!-- Pop-up -->
+    <div id="popLogin" class="pop-upLogin">
+        <div class="conteudoPop-Up">
+            <h5>Usuário ou senha inválidos!<br>Por favor, verifique e tente novamente.</h5>
+        </div>
+    </div>
+</body>
+</html>

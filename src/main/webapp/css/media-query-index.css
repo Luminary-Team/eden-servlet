@@ -1,0 +1,403 @@
+@media screen and (max-width: 1700px) {
+    .parte2 button {
+        margin-top: 10%;
+        background-color: #0080ff;
+    }
+    container4, container5 {
+        height: fit-content;
+    }
+    .parte4, .parte5 {
+        margin: 5% 0;
+    }
+    #celularParte4, #celularParte5 {
+        width: 20%;
+    }
+    .textoParte5 {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* Parte 1 */
+    #roboParte1{
+        width: 400px;
+    }
+    .textoParte1{
+        width: 500px;
+    }
+
+    /* Parte 2 */
+    .textoParte2{
+        width: 25%;
+    }
+    #celularParte2{
+        width: 500px;
+        margin-bottom: 0;
+        margin-right: 50px;
+    }
+    .parte2 button{
+        background-color: #0080ff;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    /* Parte 3 */
+    .parte3 h1{
+        font-size: 24px;
+    }
+    #videoInstitucional{
+        width: 700px;
+        height: 400px;
+    }
+
+    /* Parte 4 */
+    .parte4 {
+        margin: 5% 0;
+    }
+    #celularParte4{
+        width: 320px;
+    }
+    .textoParte4{
+        width: 450px;
+        font-size: 14px;
+    }
+
+    /* Parte 5 */
+    .parte5 {
+        margin: 5% 0;
+    }
+    #celularParte5{
+        width: 320px;
+    }
+    .textoParte5{
+        width: 450px;
+        font-size: 14px;
+        margin-left: 5%;
+    }
+
+    /* Parte 6 */
+    .parte6{
+        font-size: 14px;
+    }
+    .parte6 button{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* Parte 1 */
+    .textoParte1{
+        font-size: 12px;
+    }
+    #roboParte1{
+        width: 350px;
+    }
+
+    /* Parte 2 */
+    #celularParte2{
+        width: 420px;
+        margin-right: 20px;
+    }
+    .textoParte2{
+        font-size: 14px;
+    }
+    .parte2 button {
+        background-color: #0080ff;
+    }
+
+    /* Parte 3 */
+    .parte3 h1{
+        font-size: 20px;
+    }
+    #videoInstitucional{
+        width: 600px;
+        height: 340px;
+    }
+
+    /* Parte 4 */
+    .parte4 {
+        margin: 5% 0;
+    }
+
+    #celularParte4{
+        height: 400px;
+        width: 220px;
+    }
+    .textoParte4{
+        font-size: 12px;
+        margin-right: 5%;
+    }
+
+    /* Parte 5 */
+    .parte5 {
+        margin: 10% 0;
+    }
+
+    #celularParte5{
+        height: 400px;
+        width: 220px;
+    }
+
+    .textoParte5{
+        font-size: 12px;
+        margin-left: 5%;
+    }
+
+    /* Parte 6 */
+    .edenSince{
+        font-size: 10px;
+    }
+    #gmailEden{
+        font-size: 10px;
+    }
+    #telefoneContato{
+        font-size: 10px;
+    }
+    .parte6 button{
+        width: 80px;
+    }
+    #item{
+        font-size: 10px;
+    }
+    .bloco1 p{
+        font-size: 10px;
+    }
+    .bloco1 h3{
+        font-size: 13px;
+    }
+    .bloco2{
+        margin-left: 10px;
+    }
+    .bloco2 h3{
+        font-size: 13px;
+    }
+    .bloco2 button {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* Parte 1 */
+    #roboParte1{
+        position: relative;
+        top: 10%;
+        width: 80%;
+    }
+    .textoParte1 {
+        width: 100%;
+        position: relative;
+        margin-bottom: 0;
+        top: 5%;
+    }
+    .botao img {
+        position: relative;
+        top: 50%;
+        width: 30%;
+        height: 30%;
+    }
+    .parte1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        width: 100%;
+    }
+
+    /* Parte 2 */
+    .parte2{
+        flex-direction: column-reverse;
+        height: fit-content;
+        button {
+            background-color: #0080ff;
+        }
+    }
+
+    .textoParte2{
+        width: 80%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .textoParte2 h1{
+        text-align: left;
+        font-size: 22px;
+    }
+
+    #celularParte2{
+        margin: auto;
+        width: 400px;
+    }
+
+    /* Parte 3 */
+    .container3{
+        height: 500px;
+    }
+    .parte3 h1{
+        font-size: 13px;
+        text-align: center;
+    }
+    #videoInstitucional{
+        width: 370px;
+        height: 231px;
+    }
+
+    /* Parte 4 */
+    .conteudoTitulo h2{
+        font-size: 22px;
+    }
+    .conteudoTitulo p{
+        font-size: 16px;
+    }
+    .conteudoTitulo a{
+        font-size: 12px;
+    }
+
+    /* Parte 4 */
+    .container4{
+        height: fit-content;
+    }
+    .parte4{
+        flex-direction: column-reverse;
+    }
+    .textoParte4{
+        margin-top: 50px;
+        margin-right: 0;
+        width: 80%;
+    }
+    #celularParte4{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Parte 5 */
+    .container5{
+        height: fit-content;
+    }
+    .parte5{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .textoParte5{
+        margin: 50px auto 0;
+        width: 80%;
+    }
+    #celularParte5{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    /* Parte 6 */
+    .parte6 {
+        justify-content: space-between;
+    }
+    .bloco1{
+        margin: 0 2%;
+    }
+    .bloco2{
+        width: 150px;
+    }
+    .bloco2 button {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Parte 1 */
+    .textoParte1 h1{
+        width: 80%;
+        margin: auto;
+        font-size: 18px;
+    }
+    .container1{
+        height: 400px;
+    }
+
+    /* Parte 2 */
+    .textoParte2 {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            text-align: left;
+        }
+        button {
+            background-color: #0080ff;
+        }
+    }
+
+    #celularParte2{
+        width: 250px;
+        margin: auto;
+    }
+
+    /* Parte 3 */
+    #videoInstitucional{
+        width: 270px;
+        height: 168px;
+        margin-bottom: 0;
+    }
+    .parte3{
+        height: 450px;
+    }
+    .container3{
+        height: 450px;
+        margin: 0;
+    }
+    .parte3 h1{
+        margin-top: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Parte 4 */
+    #celularParte4{
+        width: 200px;
+        height: 360px;
+    }
+
+    /* Parte 5 */
+    .parte5 {
+        h1 {
+            margin-top: 10%;
+        }
+        flex-direction: column-reverse;
+    }
+
+    .textoParte5 {
+        margin: 0;
+    }
+
+    #celularParte5{
+        width: 200px;
+        height: 360px;
+    }
+
+    /* Parte 6 */
+    .container6 {
+        margin-bottom: 5%;
+    }
+    .parte6{
+        margin-bottom: 5%;
+        flex-direction: column;
+    }
+    .edenSince{
+        margin: 10% 0 0;
+    }
+    .bloco1{
+        margin: 5% 0;
+        text-align: center;
+    }
+    .bloco2 {
+        display: flex;
+        align-items: center;
+        margin: 5% 0;
+        text-align: center;
+        width: 172px;
+        margin: 0;
+    }
+    .bloco2 button {
+        width: 150px;
+    }
+}
