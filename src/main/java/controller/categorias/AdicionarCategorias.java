@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "AdicionarCategorias", value = "/html/areaRestrita/addCateg")
+@WebServlet(name = "AdicionarCategorias", value = "/jsp/areaRestrita/addCateg")
 public class AdicionarCategorias extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -29,10 +29,10 @@ public class AdicionarCategorias extends HttpServlet {
         // CategoDAO para adicionar o nova categoria
         if (dao.adicionarCategoria(category, description)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
 
 

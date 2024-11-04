@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 import model.Admin;
 
-@WebServlet(name = "Administrador", value = "/html/areaRestrita/admins")
+@WebServlet(name = "Administrador", value = "/jsp/areaRestrita/admins")
 public class Administrador extends HttpServlet {
     // Expressões regulares
     @Override
@@ -38,12 +38,12 @@ public class Administrador extends HttpServlet {
             sqe.printStackTrace();
             // Caso ocorra um erro, identifico esse erro e mando um atributo com o porquê desse erro para a jsp.
             request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-            request.getRequestDispatcher("/html/areaRestrita/erro.jsp").forward(request, response);
+            request.getRequestDispatcher("/jsp/areaRestrita/erro.jsp").forward(request, response);
         }
 
         // Define o atributo para a lista de administradores
         request.setAttribute("adminList", adminList);
         // Encaminha para a página JSP de listagem de administradores
-        request.getRequestDispatcher("/html/areaRestrita/edenAreaRestritaPrimeiros_admins.jsp").forward(request, response);
+        request.getRequestDispatcher("/jsp/areaRestrita/edenAreaRestritaPrimeiros_admins.jsp").forward(request, response);
     }
 }

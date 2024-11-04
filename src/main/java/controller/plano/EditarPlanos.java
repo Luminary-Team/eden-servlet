@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "EditarPlanos", value = "/html/areaRestrita/editarPlano")
+@WebServlet(name = "EditarPlanos", value = "/jsp/areaRestrita/editarPlano")
 public class EditarPlanos extends HttpServlet {
 protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     PlanosDAO dao = new PlanosDAO();
@@ -26,10 +26,10 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 //    Chamando método da classe DAO para editar dados no banco
     if (dao.editarPlan(id_plan, name, description, preco, duration_days)){
         // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-        response.sendRedirect("/html/arqsJsp/inserido.jsp");
+        response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
     } else {
         // Se a inserção falhar, redireciona para a página de erro
-        response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+        response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
     }
     }
 }

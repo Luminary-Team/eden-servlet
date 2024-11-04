@@ -88,7 +88,7 @@
 
                 <%-- POP UP DE EDITAR --%>
                 <div class="popup">
-                    <form class="popdentro" method="post" action="/html/arqsJsp/areaRestrita/editarAdmin">
+                    <form class="popdentro" method="post" action="/jsp/arqsJsp/areaRestrita/editarAdmin">
                         <h2>Editar administrador</h2>
                          <h4>ID do administrador</h4>
                         <input type="number" value="<%=id%>" name="id-admin" readonly>
@@ -108,7 +108,7 @@
 
                 <%-- POP UP DO DELETAR --%>
                 <div class="popupRmv">
-                    <form class="popdentroRmv" method="post" action="/html/arqsJsp/administrador/rmvAdmin">
+                    <form class="popdentroRmv" method="post" action="/jsp/arqsJsp/administrador/rmvAdmin">
                         <h3>Você tem certeza disso?</h3>
                         <div class="opcaoRmv">
                             <button type="submit" class="sim">Sim</button>
@@ -134,7 +134,7 @@
         <button id="addAdmin" class="add-btn">Adicionar</button>
         <!-- adicionar administrador -->
         <div class="popup">
-            <form class="popdentro" action="/html/arqsJsp/administrador/addAdmin" method="post">
+            <form class="popdentro" action="/jsp/arqsJsp/administrador/addAdmin" method="post">
                 <h2>Adicione um administrador </h2>
                 <br>
                 <h4>Nome completo</h4>
@@ -153,7 +153,7 @@
             </form>
         </div>
         <div>
-            <button class="title-btn">Adicionar, remover ou excluir administrador</button>
+            <button class="title-btn">Gerenciar administradores</button>
         </div>
     </div>
 

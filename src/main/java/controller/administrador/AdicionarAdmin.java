@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-@WebServlet(name = "AdicionarAdmin", value = "/html/arqsJsp/administrador/addAdmin")
+@WebServlet(name = "AdicionarAdmin", value = "/jsp/arqsJsp/administrador/addAdmin")
 public class AdicionarAdmin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,10 +24,10 @@ public class AdicionarAdmin extends HttpServlet {
         // AdminDAO para adicionar o novo admin
         if (dao.adicionarAdmin(nomeCompleto, email, senha)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
     }
 }

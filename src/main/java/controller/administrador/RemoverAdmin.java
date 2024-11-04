@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-@WebServlet(name = "RemoverAdmin", value = "/html/arqsJsp/administrador/rmvAdmin")
+@WebServlet(name = "RemoverAdmin", value = "/jsp/arqsJsp/administrador/rmvAdmin")
 public class RemoverAdmin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -18,10 +18,10 @@ public class RemoverAdmin extends HttpServlet {
         // AdminDAO para remover um admin
         if (dao.removeAdmin(id)) {
             // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-            response.sendRedirect("/html/arqsJsp/inserido.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
         } else {
             // Se a inserção falhar, redireciona para a página de erro
-            response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+            response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
         }
     }
 }

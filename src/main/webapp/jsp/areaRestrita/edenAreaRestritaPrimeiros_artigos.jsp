@@ -85,7 +85,7 @@
 
                 <%-- POP UP DE EDITAR --%>
                 <div class="popup">
-                    <form class="popdentro" method="post" action="/html/areaRestrita/editarArtigos">
+                    <form class="popdentro" method="post" action="/jsp/areaRestrita/editarArtigos">
                         <h2>Editar artigo</h2>
                         <h4>ID do artigo </h4>
                         <input type="number" value="<%=id%>" name="id_article" readonly>
@@ -105,7 +105,7 @@
 
                 <%-- POP UP DO DELETAR --%>
                 <div class="popupRmv">
-                    <form class="popdentroRmv" method="post" action="/html/areaRestrita/rmvArtigos">
+                    <form class="popdentroRmv" method="post" action="/jsp/areaRestrita/rmvArtigos">
                         <h3>Você tem certeza disso?</h3>
                         <div class="opcaoRmv">
                             <button type="submit" class="sim">Sim</button>
@@ -132,7 +132,7 @@
         <button id="addAdmin" class="add-btn">Adicionar</button>
         <!-- adicionar administrador -->
         <div class="popup">
-            <form class="popdentro" action="/html/areaRestrita/addArtigo" method="post">
+            <form class="popdentro" action="/jsp/areaRestrita/addArtigo" method="post">
                 <h2>Adicione um Artigo</h2>
                 <br>
                 <h4>Nome da manchete</h4>
@@ -151,7 +151,7 @@
             </form>
         </div>
         <div>
-            <button class="title-btn">Adicionar, remover ou excluir artigos</button>
+            <button class="title-btn">Gerenciar artigos</button>
         </div>
     </div>
 

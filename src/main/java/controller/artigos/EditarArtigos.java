@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet(name = "EditarArtigos", value = "/html/areaRestrita/editarArtigos")
+@WebServlet(name = "EditarArtigos", value = "/jsp/areaRestrita/editarArtigos")
 public class EditarArtigos extends HttpServlet {
 
     @Override
@@ -26,10 +26,10 @@ public class EditarArtigos extends HttpServlet {
             // chamada dos métodos da classe ArtigosDAO para editar essas variáveis no banco de dados
             if (dao.editarArtigo(id_article, headLine, news_url, source)){
                 // Se a inserção for bem-sucedida, redireciona para a página de sucesso
-                response.sendRedirect("/html/arqsJsp/inserido.jsp");
+                response.sendRedirect("/jsp/arqsJsp/inserido.jsp");
             } else {
                 // Se a inserção falhar, redireciona para a página de erro
-                response.sendRedirect("/html/arqsJsp/inseridoErro.jsp");
+                response.sendRedirect("/jsp/arqsJsp/inseridoErro.jsp");
             }
         }
     }

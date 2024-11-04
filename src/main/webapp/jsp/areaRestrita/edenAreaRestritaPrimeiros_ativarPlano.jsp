@@ -93,7 +93,7 @@
                 <button id="edit" class="edit-btn"><img src="../../imagens/lapis-edicao.png" alt="Editar"></button>
                 <%-- POP UP DE EDITAR --%>
                 <div class="popup">
-                    <form class="popdentro" method="post" action="/html/areaRestrita/alterarPlan">
+                    <form class="popdentro" method="post" action="/jsp/areaRestrita/alterarPlan">
                         <h2>Editar Status do Plano</h2>
                         <br>
                         <h4>ID plano</h4>

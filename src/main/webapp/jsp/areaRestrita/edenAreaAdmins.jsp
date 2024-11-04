@@ -4,7 +4,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("../../../index.jsp");
         }
     }
 %>
@@ -46,6 +46,6 @@
         </div>
     </div>
 
-    <a href="../../index.html" class="exit"><img src="../../imagens/exit.png" style="width: 50px; position: absolute; float: right; top: 90%; right: 2%"></a>
+    <a href="../../index.jsp" class="exit"><img src="../../imagens/exit.png" style="width: 50px; position: absolute; float: right; top: 90%; right: 2%"></a>
 </body>
 </html>
