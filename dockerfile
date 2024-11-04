@@ -12,6 +12,6 @@ RUN mvn clean package -DskipTests
 
 FROM tomcat:9.0.73-jdk11
 
-COPY --from=build /app/target/demoeden-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/demoeden-1.0-SNAPSHOT.war
+COPY --from=build /app/target/demoeden-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/main.war
 
 EXPOSE 8080
