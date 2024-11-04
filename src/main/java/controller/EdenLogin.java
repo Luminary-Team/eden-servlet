@@ -7,7 +7,7 @@ import dao.AdminDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-@WebServlet (name = "principal.EdenLogin", value = "/html/edenlogin")
+@WebServlet (name = "principal.EdenLogin", value = "/edenlogin")
 public class EdenLogin extends HttpServlet{
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -32,7 +32,7 @@ public class EdenLogin extends HttpServlet{
         }else{
             // Mensagem de erro para a variavel que receber
             session.setAttribute("erro", "Senha e/ou e-mail incorretos!");
-            response.sendRedirect("/html/edenLogin.jsp");
+            response.sendRedirect("/html/index.jsp");
         }
     }
 
