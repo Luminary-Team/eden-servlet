@@ -1,4 +1,4 @@
-<!-- <%@ page contentType="text/html;charset=UTF-8" language="java" %> -->
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,7 +42,7 @@
 
         <br>
 
-    <!-- <% String message = (String) session.getAttribute("erro");
+    <% String message = (String) session.getAttribute("erro");
 //    Recebe mensagem de erro passado na classe controller
     %>
     <% if (message != null) { %>
@@ -59,6 +59,6 @@
             }
         }, 3000); // 3000 milissegundos = 3 segundos
     </script>
-    <%}%> -->
+    <%}%>
 </body>
 </html>
