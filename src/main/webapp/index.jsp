@@ -46,7 +46,7 @@
 //    Recebe mensagem de erro passado na classe controller
     %>
     <% if (message != null) { %>
-        <div id="message-box" class="conteudoPop-Up" style="position: absolute; top: 85%;">
+        <div id="message-box" class="conteudoPop-Up">
             <h5>Usuário ou senha inválidos!<br>Por favor, verifique e tente novamente.</h5>
         </div>
 

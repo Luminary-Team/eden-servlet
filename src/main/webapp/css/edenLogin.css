@@ -97,10 +97,12 @@ img#cadeado-login {
     background-color: #ff3838;
     box-shadow: 0 2px 8px rgb(111, 111, 111);
     border-radius: 15px;
-    width: 22%;
-    height: 8%;
+    width: 300px;
+    height: 8px;
     padding: 25px;
     color: white;
+    position: absolute;
+    top: 600px;
 }
 
 
@@ -123,5 +125,12 @@ img#cadeado-login {
     }
     .partePrincipal input, .partePrincipal #submit{
         width: 100%;
+    }
+    .conteudoPop-Up{
+        font-size: x-small;
+        top: 560px;
+        width: 160px;
+        height: 10px;
+        padding: 20px;
     }
 }
