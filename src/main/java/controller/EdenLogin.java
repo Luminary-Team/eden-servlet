@@ -32,7 +32,7 @@ public class EdenLogin extends HttpServlet{
         }else{
             // Mensagem de erro para a variavel que receber
             session.setAttribute("erro", "Senha e/ou e-mail incorretos!");
-            response.sendRedirect("../../jsp/areaRestrita/index.jsp");
+            response.sendRedirect("../../index.jsp");
         }
     }
 

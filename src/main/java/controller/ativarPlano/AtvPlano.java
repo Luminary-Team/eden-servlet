@@ -39,7 +39,7 @@ public class AtvPlano extends HttpServlet {
             sqe.printStackTrace();
             // Caso ocorra um erro, identifico esse erro e mando um atributo com o porquê desse erro para a jsp.
             request.setAttribute("errorMessage", "Erro ao carregar os administradores.");
-            request.getRequestDispatcher("/jsp/areaRestrita/loginErro.jsp").forward(request, response);
+            request.getRequestDispatcher("/jsp/arqsJsp/inseridoErro.jsp").forward(request, response);
         }
 
         // Manda a lista para a JSP
