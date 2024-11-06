@@ -15,6 +15,7 @@
   <li>Java</li>
   <li>Html</li>
   <li>Css</li>
+  <li>JavaScript</li>
 </ul>
 
 
@@ -22,7 +23,32 @@
 
 <h2>📂 Estrutura do Repositório</h2>
 <ul>
-  <p>Servlet...</p>
+  <li>Java</li>
+    <ul>
+      <li>Security</li>
+      <li>Controller</li>
+        <ul>
+          <li>administrador</li>
+          <li>artigos</li>
+          <li>ativarPlano</li>
+          <li>categorias</li>
+          <li>plano</li>
+        </ul>
+      <li>dao</li>
+      <li>Model</li>
+    </ul>
+  <li>Webapp</li>
+    <ul>
+      <li>css</li>
+      <li>imagens</li>
+      <li>javaScript</li>
+      <li>jsp</li>
+        <ul>
+          <li>areaRestrita</li>
+          <li>arqsJsp</li>
+        </ul>
+      <li>index.jsp</li>
+    </ul>
 </ul>
 
 <h2>📚 Sobre o Projeto</h2>
