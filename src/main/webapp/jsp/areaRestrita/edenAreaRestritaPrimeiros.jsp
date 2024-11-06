@@ -4,7 +4,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/jsp/areaRestrita/index.jsp");
+            response.sendRedirect("/../../index.jsp");
         }
     }
 %>

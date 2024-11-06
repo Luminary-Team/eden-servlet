@@ -49,6 +49,7 @@
         </ul>
       <li>index.jsp</li>
     </ul>
+    <li style="list-style-type:disc">Na pasta de <strong style="color: #1b81ff">arqsJsp</strong>, estão apenas páginas de erro e sucesso. Já na página da <strong style="color: #1b81ff">areaRestrita</strong>, estão todos as páginas da area restrita.</li>
 </ul>
 
 <h2>📚 Sobre o Projeto</h2>
