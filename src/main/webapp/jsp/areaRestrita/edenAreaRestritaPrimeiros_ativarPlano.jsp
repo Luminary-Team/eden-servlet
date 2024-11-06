@@ -6,7 +6,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("/jsp/areaRestrita/index.jsp");
         }
     }
 
@@ -79,6 +79,13 @@
                     String dataON = atvPlansList.get(i).getOn_date();
                     String dataOFF = atvPlansList.get(i).getOff_date();
                     boolean status = atvPlansList.get(i).isStatus();
+                    String statusNome = null;
+
+                    if(status == true){
+                        statusNome = "Ativado";
+                    }else{
+                        statusNome = "Desativado";
+                    }
 
         %>
         <tr class="linha">
@@ -88,7 +95,7 @@
             <td><%=namePlan%></td> <!-- Nome do plano -->
             <td><%=dataON%></td> <!-- Data_ativa -->
             <td><%=dataOFF%></td> <!-- Data que será desativado -->
-            <td><%=status%></td> <!-- Status - true = ativo e false = desativado -->
+            <td><%=statusNome%></td> <!-- Status - true = ativo e false = desativado -->
             <td class="icons">
                 <button id="edit" class="edit-btn"><img src="../../imagens/lapis-edicao.png" alt="Editar"></button>
                 <%-- POP UP DE EDITAR --%>
@@ -100,7 +107,7 @@
                         <input type="number" value="<%=id_atv%>" name="id" readonly>
                         <br>
                         <h4>Status do plano</h4>
-                        <select name="status" type="text" required="required" value="<%=status%>">
+                        <select class="trueOrFalse" name="status" type="text" required="required" value="<%=status%>">
                             <option value="true">True</option>
                             <option value="false">False</option>
                         </select>
@@ -125,9 +132,7 @@
     </table>
 
     <div class="partePrincipal">
-        <div>
-            <button class="title-btn-status">Alterar status do produto</button>
-        </div>
+        <h1 class="title-table-ativarPlano">Alterar status do plano</h1>
     </div>
 
 <script src="../../javaScript/appAtvPlan.js"></script>

@@ -11,6 +11,7 @@
 
 /* Tabelas */
 table {
+    z-index: -1;
     position: absolute;
     width: 80%;
     left: 18.68%;
@@ -24,7 +25,7 @@ th {
     border-width: 0px 2px 0px 0px;
     border-style: solid ;
     border-color: #4a85bc ;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: #6897f3;
     color: white;
 }
@@ -37,6 +38,15 @@ th:last-child{
     border-radius: 0px 15px 0px 0px;
     border-width: 0px 0px 0px 1px;
 }
+
+th:nth-child(3),
+td:nth-child(3) {
+    padding: 0 15px;
+    max-width: 450px;
+    height: fit-content;
+    word-wrap: break-word;
+}
+
 
 /* LINHAS */
 td{
@@ -84,7 +94,7 @@ table tr:nth-child(odd){
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .popup, .popupRmv{
@@ -105,6 +115,7 @@ table tr:nth-child(odd){
 }
 
 .add-btn{
+    z-index: 1;
     text-align: center;
     font-weight: bold;
     border: 2px solid #1b81ff;
@@ -191,38 +202,40 @@ button{
     color: white;
 }
 
-.titlePrincipal{
-    position: absolute;
-    top: 15.5%;
-    font-weight: normal;
-    left: 31%;
-    color: blue;
-    border-bottom: 2px solid blue;
+.trueOrFalse {
+    margin-top: 2%;
+    width: fit-content;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #1b81ff;
+    outline: none;
 }
 
-.title-btn{
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #1b81ff;
+.title-table {
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0080FF;
-    border-radius: 15px;
-    width: 1056px;
+    font-weight: bold;
     height: 50px;
-    cursor: default;
+    width: 1056px;
     position: absolute;
     left: 160px;
     bottom: 0px;
 }
 
-.title-btn-status{
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #1b81ff;
+.title-table-ativarPlano {
+    z-index: -2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0080FF;
-    border-radius: 15px;
-    width: 1230px;
+    font-weight: bold;
     height: 50px;
-    cursor: default;
+    width: 1230px;
     position: absolute;
-    top: 0px;
+    top: 15.5%;
+    bottom: 0px;
 }

@@ -6,7 +6,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("/jsp/areaRestrita/index.jsp");
         }
     }
 
@@ -152,9 +152,8 @@
                 </div>
             </form>
         </div>
-        <div>
-            <button class="title-btn">Gerenciar administradores</button>
-        </div>
+
+        <h1 class="title-table">Gerenciar administradores</h1>
     </div>
 
 </body>

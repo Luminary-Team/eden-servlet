@@ -5,10 +5,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.partePrincipal {
+/*.partePrincipal {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    w*/
+/*    margin: 10%;*/
+/*}*/
+
+.bodyInserido {
+    float: right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 10%;
+    img {
+        width: 25%;
+    }
+    h3 {
+        margin-top: -3%;
+    }
 }

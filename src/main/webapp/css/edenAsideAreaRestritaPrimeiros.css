@@ -1,5 +1,6 @@
 /* Indice */
 .indice {
+    z-index: 1;
     position: fixed;
     top: 50px;
     width: 15%;

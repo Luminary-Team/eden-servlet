@@ -6,7 +6,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("/jsp/areaRestrita/index.jsp");
         }
     }
 
@@ -130,7 +130,7 @@
     <!-- Parte Principal -->
     <div class="partePrincipal">
         <button id="addAdmin" class="add-btn">Adicionar</button>
-        <!-- adicionar administrador -->
+        <!-- adicionar artigo -->
         <div class="popup">
             <form class="popdentro" action="/jsp/areaRestrita/addArtigo" method="post">
                 <h2>Adicione um Artigo</h2>
@@ -150,9 +150,8 @@
                 </div>
             </form>
         </div>
-        <div>
-            <button class="title-btn">Gerenciar artigos</button>
-        </div>
+
+        <h1 class="title-table">Gerenciar artigos</h1>
     </div>
 
 <script src="../../javaScript/app.js"></script>

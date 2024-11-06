@@ -4,7 +4,7 @@
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("/jsp/areaRestrita/index.jsp");
         }
     }
 %>
@@ -46,9 +46,9 @@
     </div>
 
     <!-- Parte Principal -->
-    <div class="partePrincipal">
+    <div class="bodyInserido">
         <img src="../../imagens/roboEden.png" alt="roboEden">
-        <h3>Não foi possivel inserir no banco!</h3>
+        <h3>Não foi possivel atualizar os dados!</h3>
     </div>
 </body>
 </html>

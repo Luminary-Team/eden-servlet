@@ -6,7 +6,7 @@ HttpSession ses = request.getSession(false); // false significa que não criará
     if (session != null) {
         String username = (String) session.getAttribute("nomeAdmin");
         if (username == null) {
-            response.sendRedirect("/HTMLS/index.jsp");
+            response.sendRedirect("/jsp/areaRestrita/index.jsp");
         }
     }
 
@@ -142,9 +142,8 @@ HttpSession ses = request.getSession(false); // false significa que não criará
                 </div>
             </form>
         </div>
-        <div>
-            <button class="title-btn">Gerenciar categorias</button>
-        </div>
+
+        <h1 class="title-table">Gerenciar categorias</h1>
     </div>
 
     <script src="../../javaScript/app.js"></script>

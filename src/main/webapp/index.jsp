@@ -7,33 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/edenLogin.css">
-    <link rel="stylesheet" href="css/edenHeader.css">
-    <link rel="stylesheet" href="css/media-query-header.css">
-    <link rel="icon" href="imagens/logoEden.png">
+    <link rel="stylesheet" href="../../css/edenLogin.css">
+    <link rel="stylesheet" href="../../css/edenHeader.css">
+    <link rel="stylesheet" href="../../css/media-query-header.css">
+    <link rel="icon" href="../../imagens/logoEden.png">
 </head>
 
 <body>
     <!-- Nav-Bar -->
     <header class="main-header">
-        <a href="../index.html"><img src="imagens/logoEden.png" alt="" id="edenLogo"></a>
+        <a href="../../index.html"><img src="../../imagens/logoEden.png" alt="" id="edenLogo"></a>
 
         <nav>
             <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="edenQuemSomos.html">Quem somos</a></li>
-                <li><a href="../index.html#app">App</a></li>
+                <li><a href="https://eden-landing-page.onrender.com/index.html">Início</a></li>
+                <li><a href="https://eden-landing-page.onrender.com/html/edenQuemSomos.html">Quem somos</a></li>
+                <li><a href="https://eden-landing-page.onrender.com/index.html#app">App</a></li>
             </ul>
         </nav>
 
-        <a href="index.jsp"><img src="imagens/cadeado-navbar.png" alt="" id="cadeado_navbar"></a>
+        <a href="index.jsp"><img src="../../imagens/cadeado-navbar.png" alt="" id="cadeado_navbar"></a>
     </header>
 
-    <img src="imagens/cadeado-login.png" alt="cadeado" id="cadeado-login">
+    <img src="../../imagens/cadeado-login.png" alt="cadeado" id="cadeado-login">
     <div class="partePrincipal">
         <h1>Área Restrita </h1>
         <p>Área resevada para administradores do grupo Luminary</p>
-        <form action="edenlogin" method="post">
+        <form action="../../jsp/areaRestrita/edenlogin" method="post">
             <input type="text" placeholder="User" name="user" required>
             <input type="password" placeholder="Senha" name="passwd" required>
             <input type="submit" value="Login" id="submit">

@@ -1,0 +1,160 @@
+@media screen and (max-width: 1440px) {
+  body {
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #roboParte1 {
+    width: 400px;
+  }
+
+  .textoParte1,
+  .textoParte2,
+  .textoParte4,
+  .textoParte5 {
+    width: 90%;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    padding: 20px;
+  }
+
+  #celularParte2,
+  #celularParte4,
+  #celularParte5 {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .parte2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parte4 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    display: contents;
+  }
+
+  #roboParte1 {
+    width: 300px;
+  }
+
+  .textoParte1,
+  .textoParte2,
+  .textoParte4,
+  .textoParte5 {
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+  }
+
+  #celularParte2,
+  #celularParte4,
+  #celularParte5 {
+    width: 20%;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .parte2,
+  .parte4,
+  .parte5 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container1,
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    padding: 5px;
+  }
+
+  #roboParte1 {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .textoParte1,
+  .textoParte2,
+  .textoParte4,
+  .textoParte5 {
+    width: 20%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  #celularParte2,
+  #celularParte4,
+  #celularParte5 {
+    width: 20%;
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 80%;
+  }
+}
