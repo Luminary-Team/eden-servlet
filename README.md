@@ -5,7 +5,21 @@
 </p>
 
 <p align="center">
-  Integrantes: Leonardo Lins Furlanis
+  Integrantes:
+  <ul>
+    <li>Leonardo Lins Furlanis</li>
+    <li>Carolina Tiemy</li>
+    <li>João Pedro Paulino</li>
+    <li>Murilo Carvalho Soares</li>
+    <li>Yasmin Barbosa</li>
+    <li>Lara Drielly</li>
+    <li>Guilherme Costa</li>
+    <li>Enzo Tabuchi</li>
+    <li>Heitor Macedo</li>
+    <li>Matheus</li>
+    <li>Willamy</li>
+    <li>Pedro Moisés</li>
+  </ul>
 </p>
 
 <hr>
